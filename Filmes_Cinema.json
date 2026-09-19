@@ -1,0 +1,40 @@
+{
+  "output": {
+    "blocklist": [],
+    "equalizer": {
+      "bypass": false,
+      "input-gain": 0.0,
+      "output-gain": 0.0,
+      "mode": "IIR",
+      "num-bands": 5,
+      "band0": { "type": "Low-shelf", "frequency": 90.0, "gain": 4.5, "q": 0.7, "mode": "RLC" },
+      "band1": { "type": "Bell", "frequency": 400.0, "gain": -2.0, "q": 1.0, "mode": "RLC" },
+      "band2": { "type": "Bell", "frequency": 2200.0, "gain": 3.0, "q": 1.4, "mode": "RLC" },
+      "band3": { "type": "Bell", "frequency": 6000.0, "gain": 1.5, "q": 1.0, "mode": "RLC" },
+      "band4": { "type": "High-shelf", "frequency": 12000.0, "gain": 2.0, "q": 0.7, "mode": "RLC" }
+    },
+    "compressor": {
+      "bypass": false,
+      "input-gain": 0.0,
+      "output-gain": 2.0,
+      "threshold": -18.0,
+      "ratio": 3.5,
+      "attack": 20.0,
+      "release": 150.0,
+      "knee": 6.0
+    },
+    "limiter": {
+      "bypass": false,
+      "input-gain": 0.0,
+      "limit": -0.5,
+      "lookahead": 5.0,
+      "release": 10.0,
+      "asc": false
+    },
+    "plugins_order": [
+      "equalizer",
+      "compressor",
+      "limiter"
+    ]
+  }
+}

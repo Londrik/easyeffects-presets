@@ -1,0 +1,30 @@
+{
+  "output": {
+    "blocklist": [],
+    "equalizer": {
+      "bypass": false,
+      "input-gain": -1.0,
+      "output-gain": 0.0,
+      "mode": "IIR",
+      "num-bands": 6,
+      "band0": { "type": "Low-shelf", "frequency": 65.0, "gain": 3.0, "q": 0.7, "mode": "RLC" },
+      "band1": { "type": "Bell", "frequency": 120.0, "gain": 1.5, "q": 1.2, "mode": "RLC" },
+      "band2": { "type": "Bell", "frequency": 320.0, "gain": -2.5, "q": 1.4, "mode": "RLC" },
+      "band3": { "type": "Bell", "frequency": 1400.0, "gain": 1.2, "q": 1.1, "mode": "RLC" },
+      "band4": { "type": "Bell", "frequency": 3800.0, "gain": -1.8, "q": 1.5, "mode": "RLC" },
+      "band5": { "type": "High-shelf", "frequency": 8500.0, "gain": 1.5, "q": 0.7, "mode": "RLC" }
+    },
+    "limiter": {
+      "bypass": false,
+      "input-gain": 0.0,
+      "limit": -0.3,
+      "lookahead": 4.0,
+      "release": 8.0,
+      "asc": false
+    },
+    "plugins_order": [
+      "equalizer",
+      "limiter"
+    ]
+  }
+}
