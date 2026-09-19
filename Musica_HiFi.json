@@ -7,11 +7,21 @@
       "output-gain": 0.0,
       "mode": "IIR",
       "num-bands": 5,
-      "band0": { "type": "Bell", "frequency": 80.0, "gain": 2.0, "q": 1.0, "mode": "RLC" },
-      "band1": { "type": "Bell", "frequency": 250.0, "gain": -1.0, "q": 1.2, "mode": "RLC" },
-      "band2": { "type": "Bell", "frequency": 1000.0, "gain": 0.0, "q": 1.0, "mode": "RLC" },
-      "band3": { "type": "Bell", "frequency": 4500.0, "gain": 1.5, "q": 1.2, "mode": "RLC" },
-      "band4": { "type": "Bell", "frequency": 10000.0, "gain": 2.0, "q": 1.0, "mode": "RLC" }
+      "split-channels": false,
+      "left": {
+        "band0": { "type": "Bell", "frequency": 80.0, "gain": 2.0, "q": 1.0, "mode": "RLC", "mute": false, "solo": false },
+        "band1": { "type": "Bell", "frequency": 250.0, "gain": -1.0, "q": 1.2, "mode": "RLC", "mute": false, "solo": false },
+        "band2": { "type": "Bell", "frequency": 1000.0, "gain": 0.0, "q": 1.0, "mode": "RLC", "mute": false, "solo": false },
+        "band3": { "type": "Bell", "frequency": 4500.0, "gain": 1.5, "q": 1.2, "mode": "RLC", "mute": false, "solo": false },
+        "band4": { "type": "Bell", "frequency": 10000.0, "gain": 2.0, "q": 1.0, "mode": "RLC", "mute": false, "solo": false }
+      },
+      "right": {
+        "band0": { "type": "Bell", "frequency": 80.0, "gain": 2.0, "q": 1.0, "mode": "RLC", "mute": false, "solo": false },
+        "band1": { "type": "Bell", "frequency": 250.0, "gain": -1.0, "q": 1.2, "mode": "RLC", "mute": false, "solo": false },
+        "band2": { "type": "Bell", "frequency": 1000.0, "gain": 0.0, "q": 1.0, "mode": "RLC", "mute": false, "solo": false },
+        "band3": { "type": "Bell", "frequency": 4500.0, "gain": 1.5, "q": 1.2, "mode": "RLC", "mute": false, "solo": false },
+        "band4": { "type": "Bell", "frequency": 10000.0, "gain": 2.0, "q": 1.0, "mode": "RLC", "mute": false, "solo": false }
+      }
     },
     "limiter": {
       "bypass": false,
