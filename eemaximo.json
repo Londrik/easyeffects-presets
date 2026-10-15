@@ -1,37 +1,60 @@
 {
   "output": {
     "blocklist": [],
-    "plugins_pipeline": [
+    "plugins_order": [
+      "bass_enhancer#0",
       "equalizer#0",
-      "compressor#0",
-      "maximizer#0"
+      "limiter#0"
     ],
+    "bass_enhancer#0": {
+      "amount": 4.0,
+      "blend": 0.0,
+      "bypass": false,
+      "floor": 30.0,
+      "harmonics": 6.5,
+      "scope": 120.0
+    },
     "equalizer#0": {
       "bypass": false,
-      "input-gain": 0.0,
-      "output-gain": 0.0,
-      "split-channels": false,
+      "input-gain": 1.0,
+      "output-gain": 2.0,
       "left": {
-        "band0": { "type": "High-pass", "mode": "RLC (BT)", "frequency": 75.0, "q": 0.7, "gain": 0.0, "mute": false, "solo": false },
-        "band1": { "type": "Bell", "mode": "RLC (BT)", "frequency": 250.0, "q": 1.2, "gain": -2.5, "mute": false, "solo": false },
-        "band2": { "type": "Bell", "mode": "RLC (BT)", "frequency": 2500.0, "q": 1.2, "gain": 3.0, "mute": false, "solo": false },
-        "band3": { "type": "High-shelf", "mode": "RLC (BT)", "frequency": 8000.0, "q": 0.7, "gain": 1.5, "mute": false, "solo": false }
+        "band0": { "frequency": 32.0, "gain": 5.0, "mode": "Bell", "q": 1.2, "type": "Lo-shelf" },
+        "band1": { "frequency": 64.0, "gain": 6.0, "mode": "Bell", "q": 1.2, "type": "Bell" },
+        "band2": { "frequency": 125.0, "gain": 4.0, "mode": "Bell", "q": 1.2, "type": "Bell" },
+        "band3": { "frequency": 250.0, "gain": 1.0, "mode": "Bell", "q": 1.2, "type": "Bell" },
+        "band4": { "frequency": 1000.0, "gain": -1.5, "mode": "Bell", "q": 1.0, "type": "Bell" },
+        "band5": { "frequency": 4000.0, "gain": 3.0, "mode": "Bell", "q": 1.2, "type": "Bell" },
+        "band6": { "frequency": 8000.0, "gain": 5.5, "mode": "Bell", "q": 1.2, "type": "Bell" },
+        "band7": { "frequency": 16000.0, "gain": 6.0, "mode": "Bell", "q": 1.2, "type": "Hi-shelf" }
+      },
+      "right": {
+        "band0": { "frequency": 32.0, "gain": 5.0, "mode": "Bell", "q": 1.2, "type": "Lo-shelf" },
+        "band1": { "frequency": 64.0, "gain": 6.0, "mode": "Bell", "q": 1.2, "type": "Bell" },
+        "band2": { "frequency": 125.0, "gain": 4.0, "mode": "Bell", "q": 1.2, "type": "Bell" },
+        "band3": { "frequency": 250.0, "gain": 1.0, "mode": "Bell", "q": 1.2, "type": "Bell" },
+        "band4": { "frequency": 1000.0, "gain": -1.5, "mode": "Bell", "q": 1.0, "type": "Bell" },
+        "band5": { "frequency": 4000.0, "gain": 3.0, "mode": "Bell", "q": 1.2, "type": "Bell" },
+        "band6": { "frequency": 8000.0, "gain": 5.5, "mode": "Bell", "q": 1.2, "type": "Bell" },
+        "band7": { "frequency": 16000.0, "gain": 6.0, "mode": "Bell", "q": 1.2, "type": "Hi-shelf" }
       }
     },
-    "compressor#0": {
+    "limiter#0": {
+      "alr": false,
+      "alr-attack": 5.0,
+      "alr-knee": 0.0,
+      "alr-release": 50.0,
+      "attack": 2.0,
       "bypass": false,
-      "attack": 12.0,
-      "release": 90.0,
-      "threshold": -14.0,
-      "ratio": 3.0,
-      "knee": 4.0,
-      "makeup": 4.5
-    },
-    "maximizer#0": {
-      "bypass": false,
-      "release": 80.0,
-      "ceiling": -0.3,
-      "threshold": -7.0
+      "dithering": "None",
+      "gain-boost": true,
+      "input-gain": 3.0,
+      "lookahead": 4.0,
+      "mode": "Herm Thin",
+      "output-gain": 0.0,
+      "oversampling": "None",
+      "release": 20.0,
+      "threshold": -0.5
     }
   }
 }
